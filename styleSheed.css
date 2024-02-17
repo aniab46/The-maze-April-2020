@@ -1,0 +1,58 @@
+*{margin: 0 auto; padding: 0;}
+body{background: url(image/Haunted-Background.jpg) fixed center center/cover;}
+
+.one,.two,.three{ background: #020214;transition: all 2s;text-align: center;}
+.one p,.two p,.three p{color: #020214;}
+.one:hover,.two:hover,.three:hover{background: #ff2f2f;}
+.one:active,.two:active,.three:active{background: #ff2f2f}
+
+
+.theFace img{position: fixed;top: 0;right: 0;animation-name: inOut;animation-duration: 1s;opacity: 0%;visibility: hidden;}
+
+.passBox{position: absolute;top: 50%; left: 50%;transform:translate(-50%,-50%);text-align: center;background: linear-gradient(35deg, #03020f,#200524);border-radius: 5px;box-shadow: 1px 4px 7px 0px #000000,
+                            inset 1px 1px 15px  #0c010f,
+                            -2px -3px 10px #462f702a;
+                        width: 300px;height: 170px;}
+.passBox h1{color: #d8d6d6;font-weight: 800;margin-top: 20px;}
+.passBox input{outline: none;transition: .5s;margin-top: 15px;}
+.passBox input[type="text"]{
+    background-color: #50d47c;
+    border: none;
+    color: #141414;
+    padding: 10px;
+    width:70% ;
+    border-radius: 15px 0 0 15px;
+}
+.passBox button{
+    outline: none;
+    background-color: #2ec761;
+    border: none;
+    color: #141414;
+    font-weight: 700;
+    padding: 10px;
+    transform: translateX(-4px);
+    border-radius: 0 15px 15px 0;
+    transition: .5s;
+    
+    
+    
+}
+.passBox button:focus{outline: none;}
+.passBox button:hover{
+    background-color: #1a0220;
+    color: #2ec761;
+}
+
+
+
+
+
+
+@keyframes inOut{
+    0%{opacity: 0%;visibility: visible;}
+    25%{opacity: 20%;}
+    30%{opacity: 0%;}
+    70%{opacity: 30%;}
+    100%{opacity: 0%;visibility: visible;}
+
+}
